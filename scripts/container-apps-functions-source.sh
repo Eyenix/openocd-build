@@ -172,7 +172,6 @@ function do_openocd()
             --enable-ftdi \
             ${GW18012} \
             --disable-ioutil \
-            --enable-jlink \
             --enable-jtag_vpi \
             --disable-minidriver-dummy \
             --disable-oocd_trace \
@@ -196,6 +195,7 @@ function do_openocd()
             --enable-vsllink \
             --disable-zy1000-master \
             --disable-zy1000 \
+            --disable-internal-libjaylink \
 
           cp "config.log" "${LOGS_FOLDER_PATH}/config-openocd-log.txt"
         ) 2>&1 | tee "${LOGS_FOLDER_PATH}/configure-openocd-output.txt"
