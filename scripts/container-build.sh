@@ -314,6 +314,29 @@ then
 
   # LIBFTDI_PATCH="libftdi1-${LIBFTDI_VERSION}-cmake-FindUSB1.patch"
   LIBUSB_W32_PATCH="libusb-win32-${LIBUSB_W32_VERSION}-mingw-w64.patch"
+  
+  # ---------------------------------------------------------------------------
+elif [[ "${RELEASE_VERSION}" =~ 0\.10\.0-eyenix ]]
+then
+
+  # ---------------------------------------------------------------------------
+  
+  OPENOCD_VERSION="0.10.0-eyenix"
+
+  OPENOCD_GIT_BRANCH=${OPENOCD_GIT_BRANCH:-"Eyenix"}
+  OPENOCD_GIT_COMMIT=${OPENOCD_GIT_COMMIT:-"44a4deb3732f8036494ca63885c5db8c96ad13ea"}
+  
+  # ---------------------------------------------------------------------------
+
+  LIBUSB1_VERSION="1.0.22"
+  LIBUSB0_VERSION="0.1.5"
+  LIBUSB_W32_VERSION="1.2.6.0"
+  LIBFTDI_VERSION="1.4"
+  LIBICONV_VERSION="1.15"
+  HIDAPI_VERSION="0.8.0-rc1"
+
+  # LIBFTDI_PATCH="libftdi1-${LIBFTDI_VERSION}-cmake-FindUSB1.patch"
+  LIBUSB_W32_PATCH="libusb-win32-${LIBUSB_W32_VERSION}-mingw-w64.patch"
 
   # ---------------------------------------------------------------------------
 else
@@ -324,7 +347,7 @@ fi
 # -----------------------------------------------------------------------------
 
 OPENOCD_SRC_FOLDER_NAME=${OPENOCD_SRC_FOLDER_NAME:-"${OPENOCD_PROJECT_NAME}.git"}
-OPENOCD_GIT_URL=${OPENOCD_GIT_URL:-"https://github.com/gnu-mcu-eclipse/openocd.git"}
+OPENOCD_GIT_URL=${OPENOCD_GIT_URL:-"https://github.com/Eyenix/riscv-openocd.git"}
 
 # Used in the licenses folder.
 OPENOCD_FOLDER_NAME="openocd-${OPENOCD_VERSION}"
