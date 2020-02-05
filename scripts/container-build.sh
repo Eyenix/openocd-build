@@ -324,7 +324,7 @@ then
   OPENOCD_VERSION="0.10.0-eyenix"
 
   OPENOCD_GIT_BRANCH=${OPENOCD_GIT_BRANCH:-"Eyenix-opt"}
-  OPENOCD_GIT_COMMIT=${OPENOCD_GIT_COMMIT:-"0f19deaed491820f2b4b30dfe55e18f9cac1b6a9"}
+  OPENOCD_GIT_COMMIT=${OPENOCD_GIT_COMMIT:-"73e4369e8932b6278d604489dbea2e202669019f"}
   
   # ---------------------------------------------------------------------------
 
